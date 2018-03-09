@@ -26,3 +26,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/mensagens', function () {
+    return "<body><h1>Mensagens</h1></body>";
+});
