@@ -15,5 +15,9 @@ class Message extends Model
      public function messages(){
         return $this->hasMany('\Chat\Message');
      }
+
+     public function teste() {
+         return false; // função de teste
+     }
           
 }
